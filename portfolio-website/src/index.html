@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namubiru Rose | Web Developer</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-switch">
+                <label for="theme-switch" class="switch-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Existing home section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-right">
+                    <div class="profile-container">
+                        <img src="\assets\me.jpeg" alt="Your Name" class="profile-img">
+                        <div class="profile-ring"></div>
+                    </div>
+                </div>
+                <div class="hero-left">
+                    <div class="hero-text">
+                        <h1>Hi, I'm <span class="highlight">Namubiru Rose</span> 👋</h1>
+                        <div class="typed-container">
+                            <span class="typed-prefix">A passionate </span>
+                            <span id="typed-strings">
+                                <span>Frontend Developer</span>
+                                <span>Web Designer</span>
+                                <span>UI/UX Designer</span>
+                            </span>
+                            <span id="typed"></span>
+                        </div>
+                        <p class="hero-description">
+                            I craft responsive websites where technology meets creativity
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn primary-btn">Contact Me</a>
+                            <a href="projects.html" class="btn secondary-btn">View Work</a>
+                        </div>
+                        <div class="tech-stack">
+                            <p>Tech Stack |</p>
+                            <div class="tech-icons">
+                                <i class="fab fa-html5" title="HTML5"></i>
+                                <i class="fab fa-css3-alt" title="CSS3"></i>
+                                <i class="fab fa-js" title="JavaScript"></i>
+                                <i class="fab fa-react" title="React"></i>
+                                <i class="fab fa-node-js" title="Node.js"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-left">
+                    <div class="about-text">
+                        <p class="about-description">
+                            I am a passionate Frontend Developer with expertise in creating responsive and user-friendly web applications. With a strong foundation in modern web technologies and a keen eye for design, I transform ideas into seamless digital experiences.
+                        </p>
+                        <p class="about-description">
+                            My journey in web development started with curiosity and has evolved into a professional career focused on building innovative solutions. I believe in writing clean, maintainable code and staying updated with the latest industry trends.
+                        </p>
+                        <div class="about-buttons">
+                            <a href="#" class="btn primary-btn">Download CV</a>
+                            <a href="projects.html" class="btn secondary-btn">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card">
+                            <span class="stat-number">2+</span>
+                            <p class="stat-label">Years Experience</p>
+                            <i class="fas fa-clock stat-icon"></i>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <span class="stat-number">20+</span>
+                            <p class="stat-label">Projects Completed</p>
+                            <i class="fas fa-tasks stat-icon"></i>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <span class="stat-number">15+</span>
+                            <p class="stat-label">Happy Clients</p>
+                            <i class="fas fa-smile stat-icon"></i>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <span class="stat-number">5+</span>
+                            <p class="stat-label">Technologies</p>
+                            <i class="fas fa-code stat-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Existing projects section -->
+
+    <section id="skills" class="skills-section">
+        <div class="skills-container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skills-text">
+                    <p>Here are my core competencies and technical skills</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card glass-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="90%">
+                                <div class="skill-level">90%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="85%">
+                                <div class="skill-level">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="80%">
+                                <div class="skill-level">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="75%">
+                                <div class="skill-level">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <i class="fab fa-node-js"></i>
+                        <h3>Node.js</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="70%">
+                                <div class="skill-level">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card glass-card">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Git</h3>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar" data-level="85%">
+                                <div class="skill-level">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card glass-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>rosemichellw@gmail.com</p>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+256 755154227</p>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <i class="fas fa-location-dot"></i>
+                        <h3>Location</h3>
+                        <p>Kampala, Uganda</p>
+                    </div>
+                </div>
+                <form class="contact-form glass-card">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link glass-card" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link glass-card" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link glass-card" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link glass-card" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-logo">Namubiru Rose</h3>
+                    <p class="footer-description">Frontend Developer & UI/UX Designer</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 Namubiru Rose. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
