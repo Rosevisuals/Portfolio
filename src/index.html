@@ -4,7 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namubiru Rose | Web Developer</title>
+    <title>Namubiru Rose | Frontend Developer & UI/UX Designer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Namubiru Rose - Frontend Developer and UI/UX Designer creating responsive web applications with expertise in HTML, CSS, JavaScript, and React.">
+    <meta name="keywords" content="Namubiru Rose, frontend developer, web development, UI/UX design, React developer, JavaScript developer, web designer, Uganda developer, Kampala">
+    <meta name="author" content="Namubiru Rose">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Namubiru Rose | Frontend Developer & UI/UX Designer">
+    <meta property="og:description" content="Portfolio of Namubiru Rose, a passionate Frontend Developer specializing in creating responsive websites and web applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://namubirurose.codes">
+    <meta property="og:image" content="https://namubirurose.codes/assets/portfolio-preview.png">
+    <meta property="og:site_name" content="Namubiru Rose Portfolio">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Namubiru Rose | Frontend Developer">
+    <meta name="twitter:description" content="Portfolio of Namubiru Rose, Frontend Developer and UI/UX Designer based in Kampala, Uganda.">
+    <meta name="twitter:image" content="https://namubirurose.codes/assets/portfolio-preview.jpg">
+    <meta name="twitter:creator" content="@RoseMichelle822">
+    
+    <!-- Canonical URL -->
+    <meta rel="canonical" href="https://namubirurose.codes">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Theme Color for Browser -->
+    <meta name="theme-color" content="#121212">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -17,7 +46,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -37,7 +66,7 @@
             <div class="hero-content">
                 <div class="hero-right">
                     <div class="profile-container">
-                        <img src="\assets\me.jpeg" alt="Your Name" class="profile-img">
+                        <img src="../assets/me.jpeg" alt="Your Name" class="profile-img">
                         <div class="profile-ring"></div>
                     </div>
                 </div>
@@ -169,8 +198,8 @@
                         </div>
                     </div>
                     <div class="skill-card glass-card">
-                        <i class="fab fa-node-js"></i>
-                        <h3>Node.js</h3>
+                        <i class="fab fa-java"></i>
+                        <h3>Java</h3>
                         <div class="skill-bar-container">
                             <div class="skill-bar" data-level="70%">
                                 <div class="skill-level">70%</div>
@@ -212,23 +241,24 @@
                         <p>Kampala, Uganda</p>
                     </div>
                 </div>
-                <form class="contact-form glass-card">
+                <form class="contact-form glass-card" id="contactForm" action="https://formspree.io/f/myzkrdvn" method="POST">
                     <div class="form-group">
-                        <input type="text" id="name" required>
+                        <input type="text" id="name" name="name" required>
                         <label for="name">Your Name</label>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" name="email" required>
                         <label for="email">Your Email</label>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="subject" required>
+                        <input type="text" id="subject" name="subject" required>
                         <label for="subject">Subject</label>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" required></textarea>
+                        <textarea id="message" name="message" required></textarea>
                         <label for="message">Your Message</label>
                     </div>
+                    <div class="form-status" id="formStatus"></div>
                     <button type="submit" class="submit-btn">
                         <span>Send Message</span>
                         <i class="fas fa-paper-plane"></i>
@@ -236,16 +266,16 @@
                 </form>
             </div>
             <div class="social-links">
-                <a href="#" class="social-link glass-card" title="GitHub">
+                <a href="https://github.com/Rosevisuals" class="social-link glass-card" title="GitHub" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="#" class="social-link glass-card" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/namubiru-rose-389a11253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link glass-card" title="LinkedIn" target="_blank">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#" class="social-link glass-card" title="Twitter">
+                <a href="https://x.com/RoseMichelle822?t=jsXOOhPzRdfrhF-IfYie_w&s=08" class="social-link glass-card" title="Twitter" target="_blank">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#" class="social-link glass-card" title="Instagram">
+                <a href="https://www.instagram.com/visualsrose?utm_source=qr&igsh=MXU5bjNrcjBhY3JtcA==" class="social-link glass-card" title="Instagram" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
@@ -261,25 +291,26 @@
                 </div>
                 <div class="footer-links">
                     <div class="footer-nav">
-                        <a href="#home">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#skills">Skills</a>
-                        <a href="#contact">Contact</a>
+                        <a href="index.html">Home</a>
+                        <a href="index.html">About</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="index.html">Skills</a>
+                        <a href="index.html">Contact</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p class="copyright">&copy; 2024 Namubiru Rose. All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/Rosevisuals" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/namubiru-rose-389a11253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/RoseMichelle822?t=jsXOOhPzRdfrhF-IfYie_w&s=08" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+
 </body>
 </html>

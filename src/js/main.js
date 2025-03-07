@@ -113,3 +113,55 @@ document.addEventListener('DOMContentLoaded', () => {
         parallax.style.backgroundPositionY = `${scrolled * 0.5}px`;
     });
 });
+function submitForm(event) {
+    event.preventDefault();
+    
+    // Get form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    const statusDiv = document.getElementById('formStatus');
+    
+    // Validate form (additional validation if needed)
+    if (!name || !email || !subject || !message) {
+        statusDiv.innerHTML = '<p class="error">Please fill in all fields.</p>';
+        return false;
+    }
+    
+    // Show loading state
+    const submitBtn = document.querySelector('.submit-btn');
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
+    submitBtn.disabled = true;
+    setTimeout(() => {
+        // For actual implementation, use Fetch API to submit to your backend
+        // Example:
+        // fetch('your-form-handler', {
+        //     method: 'POST',
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify({ name, email, subject, message })
+        // })
+        // .then(response => response.json())
+        // .then(data => {
+        //     statusDiv.innerHTML = '<p class="success">Thank you! Your message has been sent.</p>';
+        //     document.getElementById('contactForm').reset();
+        // })
+        // .catch(error => {
+        //     statusDiv.innerHTML = '<p class="error">There was an error sending your message. Please try again.</p>';
+        // })
+        // .finally(() => {
+        //     submitBtn.innerHTML = originalBtnText;
+        //     submitBtn.disabled = false;
+        // });
+        
+        // Success message (demo)
+        statusDiv.innerHTML = '<p class="success">Thank you! Your message has been sent.</p>';
+        document.getElementById('contactForm').reset();
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.disabled = false;
+        
+    }, 2000);
+    
+    return false;
+}
